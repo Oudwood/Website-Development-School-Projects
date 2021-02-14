@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author - Shan He*/
+	
+body{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #005d7e;
+	font-size: 100%;
+	background-image: url("background.jpg");
+	height: 100%;
+	background-size: cover;
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+footer{
+	float:right;
+	position: absolute;
+	top: 500px;
+	left: 1100px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: black;
+}
+
+input, textarea, label{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 110%;
+}
+
+#header{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	width: 100px;
+	top: 50px;
+	left: 50px;	
+}
+
+
+
+#mainpage{	
+	width: 550px;
+	float: none;
+	
+}
+
+#sum{
+	float: none;
+	font-size: 100%;
+}
+
+.header{
+	height: 10%;
+	width: 10%;
+	float: left;
+
+}
+
+/*Home page headline style greetings*/
+.shan{
+	color: #005d7e;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 200%;
+	line-height: 60%;
+	text-align: center;
+	top:250px;
+}
+
+
+.content{
+	width: 550px;
+	position: absolute;
+	top: 100px;
+	left: 300px;
+}
+
+
+
+.list {
+	background-color: #005d7e;
+	overflow: hidden;
+	float: right;
+
+}
+
+/* The navigation bar */
+.list a {
+  float: left;
+  color: #e0fbfc;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* This is to change the color of links when hover on it */
+.list a:hover {
+  background-color: dimgrey;
+  color: #dab49e;
+}
+
+.list a.active {
+  background-color: #005d7e;
+  color: white;
+}
+
+h1{
+	width: 550px;
+	margin: auto;
+	
+}
+
+/*This is to make the home page navigation bar stay in the center*/
+div{
+	width: 550px;
+	margin: auto;
+}
+
+
+
+
