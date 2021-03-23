@@ -1,0 +1,263 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+/*Header styling*/
+.title{
+	color: #eb8e15;
+	text-shadow:0 1px 1px #f7e6cc;
+	padding-bottom: 1px;
+	animation:glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #f7e6cc;
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #f5dfbe;
+	}
+  }
+
+header{
+	background-image: url(../images/background1.jpg);
+	background-size: cover;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+	background-color:#EFCFA0;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	width: auto;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	text-align: center;
+	border: 3px solid black;
+	color:#3e5afc;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h2{
+	font-family:"Myriad Pro",'Times New Roman', Times, serif;
+	text-shadow:0 1px 1px black;
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+h1{
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family:"Myriad Pro",'Times New Roman', Times, serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+.arrow{
+	color: #914110;
+}
+.go_up {
+	float: right; 
+	padding-right: 15px;  
+	padding-bottom: 5px;
+	background-color: #E1A140;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#532200;
+	border-bottom:1px solid #6e2f02;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#331600;
+	border-bottom-color:#421c00;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(../images/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:16em;
+
+	border:1px solid #E1A140;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:block;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#565656;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	background-color: #E1A140;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+hgroup, .page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#532200;
+	margin:3em 0;
+	padding:20px;	
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	border:3px solid #3d1a00;
+	float:right;
+	height:300px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+#columnpic{
+	float: right;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+.twocolumn {
+	float: left;
+	width: 45%;
+	padding: 15px;
+  }
+
+.threecolumn{
+	float: left;
+	width: 30%;
+	padding: 15px;
+}
+
+.feedback{
+	text-align: right;
+	color: #532200;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:-2.5em;	
+	position:relative;
+	background-color:#532200;
+	z-index:100;
+	padding:2px 4px;
+	color:#cccccc;
+}
+
+footer p:hover{
+	text-decoration:none;
+	background-color:#3a1901;
+}
